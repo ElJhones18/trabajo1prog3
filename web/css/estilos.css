@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat Alternates", sans-serif;
+}
+body {
+	background: #787A91;
+  background-size: 100vw 100vh;
+  background-repeat: no-repeat;
+  font-size: 20px;
+}
+
+.capa {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background: #EEEE;
+  z-index: -1;
+  top: 0;
+  left: 0;
+}
+/*Estilos para el encabezado*/
+.header {
+  width: 100%;
+  height: 100px;
+  position: sticky;
+  top: 0;
+  left: 0;
+  background-color: #141E61;
+}
+.container {
+  width: 100%;
+  /* max-width: 1200px; */
+  margin: auto;
+}
+.container .btn-menu,
+.logo {
+  float: left;
+  line-height: 100px;
+}
+.container .btn-menu label {
+  color: #fff;
+  font-size: 25px;
+  cursor: pointer;
+}
+.container .menu-phone {
+  float: right;
+  line-height: 100px;
+  
+}
+.container .menu-phone a {
+  display: inline-block;
+  padding: 15px;
+  line-height: normal;
+  text-decoration: none;
+  color: #fff;
+  transition: all 0.3s ease;
+  border-bottom: 2px solid transparent;
+  font-size: 15px;
+  margin-right: 5px;
+}
+.container .menu-phone a:hover {
+  border-bottom: 2px solid #c7c7c7;
+  padding-bottom: 5px;
+}
+/*Fin de Estilos para el encabezado*/
+
+/* estilos del main*/
+main {
+  position: -webkit-sticky;
+  margin: 18vh 10vh 0vh 10vh;
+  color: rgba(43, 41, 41, 0.938) solid;
+}
+
+
+main img {
+  width: 30vh;
+}
+
+/*Menù lateral*/
+#btn-menu {
+  display: none;
+}
+.container-menu {
+  position: absolute;
+  background: rgba(226, 217, 217, 0.5);
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  transition: all 500ms ease;
+  opacity: 0;
+  visibility: hidden;
+}
+#btn-menu:checked ~ .container-menu {
+  opacity: 1;
+  visibility: visible;
+}
+.cont-menu {
+  width: 100%;
+  max-width: 250px;
+  background: #0F044C;
+  height: 100vh;
+  position: sticky;
+  transition: all 500ms ease;
+  transform: translateX(-100%);
+  position: relative;
+}
+#btn-menu:checked ~ .container-menu .cont-menu {
+  transform: translateX(0%);
+}
+.cont-menu nav {
+  transform: translateY(40%);
+}
+.cont-menu nav a {
+  display: block;
+  text-decoration: none;
+  padding: 20px;
+  color: #c7c7c7;
+  border-left: 5px solid transparent;
+  transition: all 400ms ease;
+}
+.cont-menu nav a:hover {
+  border-left: 5px solid #c7c7c7;
+  background: #7c7979a8;
+}
+.cont-menu label {
+  position: absolute;
+  right: 5px;
+  top: 10px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 18px;
+}
+/** fin estilos lateral */
+
+@media all and (max-width: 750px) {
+
+  .container .menu-phone {
+    visibility: visible;
+  }
+
+  .container {
+    visibility: hidden;
+  }
+  
+}
+
+@media all and (min-width: 749px) {
+  
+  .container .menu-phone {
+    visibility: hidden;
+  }
+
+  .container {
+    visibility: visible;
+  }
+}

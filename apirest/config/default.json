@@ -1,0 +1,14 @@
+{
+    "db-connections": {
+        "mongodb": {
+            "host": "cluster0.me7bzle.mongodb.net",
+            "user": "jhones18",
+            "password": "unodos3tres",
+            "dbname": "DB"
+        }
+    },
+    "secretKeys": {
+        "cryptojs": "jsA5t2@tfhD"
+    },
+    "server-port": 3000
+}

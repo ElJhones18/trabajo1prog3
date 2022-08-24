@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #005555;
+}
+
+h1 {
+    margin: 0px 40px 40px 0px;
+}
+
+button {
+    padding: 5px;
+    margin: 5px;
+    width: 33.3%;
+    background-color: rgba(108, 140, 153, 0.425);
+    border-radius: 3em;
+}
+
+button :hover{
+    background-color: white;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+#buscador {
+    display: flex;
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.datosUsr {
+    padding-left: 15px;
+}
+
+#cards {
+    columns: 1;
+    gap: 12px;
+    margin-left: 12px;
+    margin-top: 10px;
+    margin-right: auto;
+    
+}
+
+#card {
+    break-inside: avoid;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    padding-left: 4px;
+    padding-right: 4px;
+    width: 100%;
+}
+
+#articule {
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+    background-color: rgb(255 255 255);
+    transition-duration: 500ms;
+}
+
+#articule :hover{
+    background-color: rgb(238 242 255);
+}
+
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* line-height: 1.25; */
+    /* padding: 8px; */
+    margin-top: 10px;
+}
+
+#footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    line-height: 1.25;
+    padding: 8px;
+}
+
+#footer1 {
+    display: flex;
+    align-items: center;
+    text-decoration-line: none;
+    color: black;
+}
+
+#footer1 :hover{
+    text-decoration-line: underline;
+}
+
+#footerp {
+    margin-left: 0.5rem;
+    font-size: 0.875rem; /* 14px */
+    line-height: 1.25rem; /* 20px */
+}
+
+#span {
+    visibility: hidden;
+}
+
+#h1 {
+    /* font-size: 1.125rem; 18px */
+    line-height: 1.75rem;
+}
+
+#a {
+    text-decoration-line: none;
+}
+
+#a :hover{
+    text-decoration-line: underline;
+    color: black;
+}
+
+#a1 {
+    text-decoration-line: none;
+    color: rgb(77 124 15);
+}
+
+#a1 :hover{
+    color: rgb(127 29 29);
+}
+
+#utilities {
+    visibility: hidden;
+}
+
+.filtrar {
+    display: flex;
+    width: 100%;
+    width: 100%;
+}
+
+@media (min-width: 640px) {
+    #cards {
+        columns: 1;
+
+    }
+}
+
+@media (min-width: 768px) {
+    #cards{
+        columns: 2;
+    }
+}
+
+@media (min-width: 960px) { 
+    #header {
+        padding: 4px;
+    }
+
+    #footer {
+        padding: 4px;
+    }
+ }
+
+@media all and (max-width: 750px) {
+
+    h1 {
+        font-size: 25px;
+        margin: 0px 40px 40px 0px;
+    }
+}
